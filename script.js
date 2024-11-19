@@ -1,23 +1,12 @@
-// Initialize WaveSurfer
-const wavesurfer = WaveSurfer.create({
-    container: '#waveform',
-    waveColor: '#fff',
-    progressColor: '#f00',
-    cursorColor: 'transparent',
-    height: 80,
-});
+function showSection(sectionNumber) {
+  const tabs = document.querySelectorAll('.tab');
+  const contents = document.querySelectorAll('.content');
 
-// Load your audio file from Google Drive
-wavesurfer.load('https://drive.google.com/uc?export=download&id=15NXnmjsToLBfAHM-BUuHe_i81teApXXO');
+  // Remove 'active' class from all tabs and contents
+  tabs.forEach(tab => tab.classList.remove('active'));
+  contents.forEach(content => content.classList.remove('active'));
 
-// Play/pause toggle functionality
-document.getElementById('play-btn').addEventListener('click', () => {
-    if (wavesurfer.isPlaying()) {
-        wavesurfer.pause();
-        document.getElementById('play-btn').textContent = 'Play';
-    } else {
-        wavesurfer.play();
-        document.getElementById('play-btn').textContent = 'Pause';
-    }
-});
-
+  // Add 'active' class to the clicked tab and corresponding section
+  tabs[sectionNumber - 1].classList.add('active');
+  document.getElementById('section' + sectionNumber).classList.add('active');
+}
