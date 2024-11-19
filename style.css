@@ -17,7 +17,7 @@ html {
   width: 440px;
   position: absolute;
   top: 10px;
-  left: 250px;
+  left: 240px;
   margin: 1%;
 }
 
@@ -80,7 +80,7 @@ html {
   width: 440px;
   position: absolute;
   top: 105px;
-  left: 250px;
+  left: 240px;
   margin: 1%;
 }
 
@@ -90,11 +90,16 @@ html {
   height: 90px;
   position: absolute;
   top: 12px;
-  left: 700px;
+  left: 690px;
   margin: 1%;
 }
 
 .shortbio {
+  
+}
+
+.playable {
+  margin: 2%;
   
 }
 
@@ -124,4 +129,3 @@ html {
 .waveform {
     width: 100%;
 }
-
