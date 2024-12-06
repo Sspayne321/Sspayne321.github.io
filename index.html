@@ -69,7 +69,7 @@
 
     .menu {
       border: 2px solid black;
-      width: 440px;
+      width: 520px;
       position: absolute;
       top: 10px;
       left: 260px;
@@ -80,7 +80,7 @@
       cursor: pointer;
     }
 
-    .home, .about, .work, .contact, .equipment {
+    .home, .about, .work, .contact, .equipment, .pricing {
       border: 1px solid black;
       width: 70px;
       text-align: center;
@@ -92,19 +92,17 @@
     .about { left: 80px; }
     .work { left: 160px; }
     .contact { left: 240px; }
-    .equipment {
-      left: 320px;
-      width: 110px;
-    }
+    .equipment { left: 320px; width: 110px; }
+    .pricing { left: 440px; }
 
-    .home:hover, .about:hover, .work:hover, .contact:hover, .equipment:hover {
+    .home:hover, .about:hover, .work:hover, .contact:hover, .equipment:hover, .pricing:hover {
       cursor: pointer;
       box-shadow: 2px 2px;
     }
 
     .bottomspacer {
       border: 2px solid black;
-      width: 440px;
+      width: 520px;
       position: absolute;
       top: 105px;
       left: 260px;
@@ -117,7 +115,7 @@
       height: 90px;
       position: absolute;
       top: 12px;
-      left: 710px;
+      left: 770px;
       margin: 1%;
     }
 
@@ -176,6 +174,7 @@
       top: 175px;
       left: 300px;
       border: 2.5px solid black;
+    }
   </style>
 </head>
 <body>
@@ -190,6 +189,7 @@
     <div class="tab work" onclick="showSection(3)">My Work</div>
     <div class="tab contact" onclick="showSection(4)">Contact</div>
     <div class="tab equipment" onclick="showSection(5)">My Equipment</div>
+    <div class="tab pricing" onclick="showSection(6)">My Pricing</div>
   </div>
 
   <div class="bottomspacer"></div>
@@ -253,35 +253,18 @@
     <ul class="a">
       <li>Computer Programs</li>
       <ul class="b">
-        <li>Logic Pro</li>
-        <li>Dorico</li>
+        <li>Digital Audio Workstation (DAW)</li>
       </ul>
-    </ul>
-
-    <ul class="a">
-      <li>Plug-Ins</li>
+      <li>Musical Equipment</li>
       <ul class="b">
-        <li>Musio</li>
-        <li>Hans Zimmer Percussion Pro</li>
-        <li>Hans Zimmer Strings</li>
+        <li>Keyboard</li>
       </ul>
     </ul>
-
-    <ul class="a">
-      <li>Keyboards</li>
-      <ul class="b">
-        <li>Arturia KeyLab 88 mkII</li>
-        <li>Arturia MiniLab 3</li>
-      </ul>
-    </ul>
-
-    <ul class="a">
-      <li>Computers</li>
-      <ul class="b">
-        <li>Macbook Air M2</li>
-        <li>HP Envy 360 16"</li>
-      </ul>
-    </ul>
+  </div>
+  
+  <!-- New Section for "My Pricing" -->
+  <div id="section6" class="content menu-pricing">
+    <!-- Content will go here in the future -->
   </div>
 </body>
 </html>
